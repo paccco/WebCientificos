@@ -2,8 +2,9 @@
     margin:0;
     position: relative;
     clear:both;
-    font-size: 100px;
-    background-color: #666;
+    font-size: 150px;
+    font-family: monospace;
+    background-color: #000000;
     text-align: center;
     color: white;
     width: 98,5%;
@@ -17,7 +18,7 @@
     left:0;
     right:0;
     bottom:0;
-    font-size: 20px;
+    font-size: 30px;
     width: auto;
     height: auto;
     background: #ccc;
@@ -27,7 +28,7 @@
 }
 
 .menu{
-    margin: 5%;
+    margin: 4%;
 }
 
 .fotoAtomo{
@@ -36,9 +37,42 @@
     position: absolute;
     float: left;
     clear: left;
-    width: 150px;
-    height: 150px;
+    width: 190px;
+    height: 190px;
     background-image: url(image/atomo.png);
     background-repeat: no-repeat;
-    background-size: 150px 150px;
+    background-size: 190px 190px;
+}
+
+.cuerpoPrincipal{
+    margin: 10px;
+    position: relative;
+    width: 80%;
+    height: 900px;
+    float: left;
+    clear: left;
+    background-color: blue;
+}
+
+body{
+    background-image: url(image/texturaMadera.jpg);
+    background-repeat: repeat;
+}
+
+.barraLateral{
+    position: relative;
+    background-color: white;
+    height: 900px;
+    width: 18.1%;
+    margin: 10px;
+    float: right;
+}
+
+.tituloEnlaces{
+    clear:left;
+    font-size: 50px;
+}
+
+.enlacesAux{
+    font-size: 35px;
 }
