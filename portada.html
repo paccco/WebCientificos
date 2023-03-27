@@ -89,22 +89,53 @@
     <!-- Inicio de la barra lateral auxiliar -->
     <aside class="barraLateral">
 
-        <!-- Los enlaces tienen titulos y su enlace respectivo -->
-        <br><b class="tituloEnlaces">HTML</b></br>
-        <a class="enlacesAux" href="http://www.w3schools.com/html/">http://www.w3schools
-            .com/html/</a>
-        <a class="enlacesAux" href="https://developer.mozilla.org/es/docs/Web/HTML">https://developer.mozilla
-            .org/es/docs/Web/HTML</a>
-        <br><b class="tituloEnlaces">CSS</b></br>
-        <a class="enlacesAux" href="http://www.w3schools.com/css/">http://www.w3schools.com/css/</a>
-        <a class="enlacesAux" href="https://developer.mozilla.org/es/docs/Web/CSS">https://developer.mozilla.org/
-            es/docs/Web/CSS</a>
-        <br><b class="tituloEnlaces">Grid Layouts</b></br>
-        <a class="enlacesAux" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout">https://developer.mozilla.org/
-            en-US/docs/Web/CSS/
-            CSS_Grid_Layout/
-            Basic_Concepts_
-            of_Grid_Layout</a>
+        <div>
+            <!-- Los enlaces tienen titulos y su enlace respectivo -->
+            <br><b class="tituloEnlaces">HTML</b></br>
+            <a class="enlacesAux" href="http://www.w3schools.com/html/">http://www.w3schools
+                .com/html/
+            </a>
+            <a class="enlacesAux" href="https://developer.mozilla.org/es/docs/Web/HTML">https://developer.mozilla
+                .org/es/docs/Web/HTML
+            </a>
+            <br><b class="tituloEnlaces">CSS</b></br>
+            <a class="enlacesAux" href="http://www.w3schools.com/css/">http://www.w3schools.com/css/</a>
+            <a class="enlacesAux" href="https://developer.mozilla.org/es/docs/Web/CSS">https://developer.mozilla.org/
+                es/docs/Web/CSS</a>
+            <br><b class="tituloEnlaces">Grid Layouts</b></br>
+            <a class="enlacesAux" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout">https://developer.mozilla.org/
+                en-US/docs/Web/CSS/
+                CSS_Grid_Layout/
+                Basic_Concepts_
+                of_Grid_Layout
+            </a>
+        </div>
+
+        <button class="botonComents" onclick="mostrar_ocultar()">Comentarios</button>
+
+        <div class="cajaComentarios" id="cajaCom" style="display: none;">
+            <div class="comen" id="comen">
+                <p>
+                    Fran (20-2-2023 19:10):  
+                    Muy buena pagina
+                </p>
+                <p>
+                    Sara (22-1-2023 15:15):
+                    Faltan las fuentes
+                </p>
+            </div>
+            
+            <form id="formulario">
+                <p>Nombre:</p>
+                <input class="aux" id="name" type="text"></input>
+                <p>Correo:</p>
+                <input class="aux" id="email" type="text"></input>
+                <p>Texto:</p>
+                <input class="textocom" id="textocom" type="text"></input>
+                <button type="button" onclick="send()">Enviar</button>
+            </form>
+        </div>
+
     </aside>
     <!-- Fin de la barra lateral auxiliar -->
 
@@ -116,3 +147,5 @@
     </footer>
     <!-- Fin pie de pagina -->
 </html>
+
+<script src="cientifico.js"></script>

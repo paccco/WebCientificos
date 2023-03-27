@@ -86,6 +86,48 @@ body{
 .enlacesAux{
     font-size: 35px;
 }
+
+.cajaComentarios{
+    clear: both;
+    width: 95%;
+    height: 57%;
+    margin: 10px;
+    background-color: white;
+}
+
+.comen{
+    height: 25%;
+    width: 95%;
+    border: solid red 3px;
+    margin: 10px;
+    overflow: scroll;
+}
+
+.formulario{
+    border: solid blue 3px;
+    height: 70%;
+    width: 95%;
+    margin: 10px;
+}
+
+.botonComents{
+    visibility: visible;
+    margin: 10%;
+    width: 25%;
+    height: 25px;
+}
+
+.textocom{
+    height: 400px;
+    width: 90%;
+    overflow: scroll;
+}
+
+.aux{
+    width: 90%;
+    overflow: scroll;
+}
+
 /* Fin de la barra lateral auxiliar */
 
 /* Unica cascada del pie de pagina */
