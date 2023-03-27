@@ -1,7 +1,11 @@
+/** listener para cambiar en vivo las palabras censuradas */
+
 const input = document.querySelector('#textocom');
 
 input.addEventListener("input",filtro);
 
+
+/** mostrar y ocultar la caja de comentarios */
 function mostrar_ocultar(){
     var seccion = document.getElementById("cajaCom");
     if (seccion.style.display === "none") {
@@ -11,6 +15,7 @@ function mostrar_ocultar(){
     }
 }
 
+/** al hacer clic en enviar comprobamos nombre y correo , luego ponemos el texto con su formato*/
 function send(){
   var nombre = document.getElementById("name").value;
   var correo = document.getElementById("email").value;
@@ -20,7 +25,7 @@ function send(){
     if(compruebaEmail(correo)){
       const hoy=new Date();
       var newt = document.createElement("p");
-      var t = document.createTextNode(nombre+" "+hoy.toUTCString()+":\n"+texto);
+      var t = document.createTextNode(nombre+" "+hoy.toUTCString()+":\n"+texto); //formato de comentario
 
       newt.appendChild(t);
       document.getElementById("comen").appendChild(newt);
@@ -32,6 +37,8 @@ function send(){
   }
 }
 
+
+/** comprueba que el texto sea parecido a un correo, con que tenga una arroba y un punto vale */
 function compruebaEmail(email){
   var arroba=false;
   var punto=false;
@@ -46,6 +53,7 @@ function compruebaEmail(email){
   return arroba && punto;
 }
 
+/** filtra las palabras censuradas */
 function filtro(){
   let palabrasCensuradas=["puta","mierda", "subnormal", "gilipollas"];
   var texto=document.getElementById("textocom").value;
